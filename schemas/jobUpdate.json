@@ -1,0 +1,41 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Job Update Schema",
+    "required": [],
+    "additionalProperties": false,
+    "properties": {
+        "title": {
+            "type": "string",
+            "default": "",
+            "title": "The title Schema",
+            "examples": [
+                "test"
+            ]
+        },
+        "salary": {
+            "type": "integer",
+            "default": 0,
+            "minimum": 0,
+            "title": "The salary Schema",
+            "examples": [
+                100
+            ]
+        },
+        "equity": {
+            "type": "string",
+            "default": "",
+            "title": "The equity Schema",
+            "examples": [
+                "0"
+            ]
+        }
+    },
+    "examples": [{
+        "title": "test",
+        "salary": 100,
+        "equity": "0"
+    }]
+}
